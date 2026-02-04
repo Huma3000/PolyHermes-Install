@@ -1,5 +1,5 @@
 # PolyHermes 安装使用
-## 步骤 1：重置 VPS 系统
+步骤 1：重置 VPS 系统
 
 登录你的 VPS 控制台
 
@@ -25,8 +25,9 @@ apt install -y curl wget sudo
 安装宝塔面板（Linux）：
 
 ## 下载并安装宝塔面板（官方推荐脚本）
+...base
 curl -sSO http://download.bt.cn/install/install-ubuntu_6.0.sh && bash install-ubuntu_6.0.sh
-
+...
 
 安装过程中会提示用户名、密码、面板端口
 
