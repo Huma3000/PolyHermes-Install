@@ -90,11 +90,8 @@ docker info | grep -i debug
 ```
 显示Debug Mode: true即开启成功
 
-前端默认映射 VPS 8080 端口
 
-MySQL 默认映射 VPS 3307 端口
-
-步骤 5：通过宝塔开放端口
+通过宝塔开放端口
 
 宝塔面板 → 安全 → 防火墙
 
@@ -102,11 +99,28 @@ MySQL 默认映射 VPS 3307 端口
 
 如果需要 HTTPS，可以直接使用宝塔自带的 一键 SSL 证书
 
+
 ## 五.访问 PolyHermes Web UI
 http://<VPS公网IP>:8080
 
-如果 HTTPS 配置好：
+### 账户管理→→→添加账户
 
-https://<VPS公网IP>:8080
+钱包导入推荐小狐狸Metamask
+
+授权登录polymarket
+
+并在再钱包充值pol和usdc 转入polymarket
+
+返回小狐狸点击左上角account →→→三个点→→→账户详情→→→私钥
+
+复制到PolyHermes即可
+
+
+
+
+
+
+
+
 
 
