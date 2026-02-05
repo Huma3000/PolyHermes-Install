@@ -9,6 +9,10 @@
 SSH 登录 VPS：
 
 ssh root@<VPS公网IP>
+```bash
+sudo -i
+
+```
 
 
 更新：
