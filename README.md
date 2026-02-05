@@ -61,12 +61,31 @@ chmod +x deploy.sh
 ./deploy.sh
 ```
 
-按提示填写数据库密码等信息
+按提示填写数据库密码等信息并记录
 
-安装完成后启动容器：
+
+安装完成后开启docker的日常dubug
+：
 ```bash
-docker compose -f docker-compose.prod.yml up -d
-docker compose -f docker-compose.prod.yml ps
+# 停止 Docker
+sudo systemctl stop docker
+
+# 备份并清空配置
+sudo mv /etc/docker/daemon.json /etc/docker/daemon.json.bak 2>/dev/null
+
+# 写入新配置
+sudo tee /etc/docker/daemon.json <<'EOF'
+{
+  "log-level": "debug",
+  "debug": true
+}
+EOF
+
+# 启动 Docker
+sudo systemctl start docker
+
+# 验证
+docker info | grep -i debug
 ```
 
 前端默认映射 VPS 8080 端口
@@ -89,4 +108,3 @@ http://<VPS公网IP>:8080
 https://<VPS公网IP>:8080
 
 
-宝塔面板可以实时管理容器、端口、防火墙，非常直观
