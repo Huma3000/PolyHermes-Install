@@ -20,9 +20,9 @@ sudo apt upgrade -y
 
 ## 二.下载并安装宝塔面板（官方推荐脚本）
 
-...base
+```bash
 curl -sSO http://download.bt.cn/install/install-ubuntu_6.0.sh && bash install-ubuntu_6.0.sh
-...
+```
 
 安装过程中会提示用户名、密码、面板端口
 
@@ -50,12 +50,12 @@ Nginx（可选，做反向代理 + HTTPS）
 
 在宝塔面板 终端 或 SSH 中执行：
 
-...base
+```bash
 mkdir -p ~/polyhermes && cd ~/polyhermes
 curl -fsSL https://raw.githubusercontent.com/WrBug/PolyHermes/main/deploy-interactive.sh -o deploy.sh
 chmod +x deploy.sh
 ./deploy.sh
-...
+```
 
 按提示填写数据库密码等信息
 
