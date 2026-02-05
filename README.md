@@ -62,6 +62,7 @@ chmod +x deploy.sh
 ```
 
 按提示填写数据库密码等信息并记录
+开启
 
 
 安装完成后开启docker的日常dubug
@@ -87,6 +88,7 @@ sudo systemctl start docker
 # 验证
 docker info | grep -i debug
 ```
+显示Debug Mode: true即开启成功
 
 前端默认映射 VPS 8080 端口
 
@@ -96,7 +98,7 @@ MySQL 默认映射 VPS 3307 端口
 
 宝塔面板 → 安全 → 防火墙
 
-添加允许 TCP 8080（PolyHermes Web UI）
+添加允许 （PolyHermes Web UI）8080 端口
 
 如果需要 HTTPS，可以直接使用宝塔自带的 一键 SSL 证书
 
