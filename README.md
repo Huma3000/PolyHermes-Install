@@ -64,10 +64,10 @@ chmod +x deploy.sh
 按提示填写数据库密码等信息
 
 安装完成后启动容器：
-...base
+```bash
 docker compose -f docker-compose.prod.yml up -d
 docker compose -f docker-compose.prod.yml ps
-...
+```
 
 前端默认映射 VPS 8080 端口
 
