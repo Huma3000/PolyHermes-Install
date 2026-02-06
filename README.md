@@ -121,6 +121,13 @@ http://<VPS公网IP>:8080
 
 首先再Leader管理理填写巨鲸钱包地址和设置跟单模版 回测以后就可以开始跟单了
 
+### Builder Relayer API 配置
+
+1.先获取 Builder API Credentials（必须在 Polymarket 官网操作）登录 https://polymarket.com （用你的 Polymarket 账户）。
+去设置页面：https://polymarket.com/settings?tab=builder （或 Settings → Builder Settings）。
+
+系统管理--概览中添加
+
 
 ### 系统管理
 
